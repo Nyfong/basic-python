@@ -7,5 +7,6 @@ details = [
     {"name":"sokha", "age": 22, "city": "Kampot"},
 ]
 
+#loop through the list of dictionaries
 for detail in details:
     print(f"Name: {detail['name']}, Age: {detail['age']}, City: {detail['city']}")
