@@ -1,6 +1,6 @@
 # **kwargs → captures keyword arguments as a dict
-def my_fun(**kwats):
-    print(kwats)
+def my_fun(**kwargs):
+    print(kwargs)
 
 key="val"
 my_fun(key="val", key2="val2")  # it will print as a dictionary based on the function we return print
