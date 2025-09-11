@@ -90,7 +90,7 @@ def scan_xss(url):
 
 if __name__ == "__main__":
     
-    # url = "https://xss-game.appspot.com/level1/frame"
+    url = "https://xss-game.appspot.com/level1/frame"
     print("Enter a URL to test for XSS vulnerabilities:")
     url = input().strip()
     
