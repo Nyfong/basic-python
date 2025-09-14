@@ -21,11 +21,16 @@ error_signatures =[
     "warning",
     "unclosed quotation",
 ]
-
+# fake browser headers
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                  "AppleWebKit/537.36 (KHTML, like Gecko) "
+                  "Chrome/117.0 Safari/537.36"
+}
 for payload in payloads:
     test_url = url + payload
     try:
-        response = requests.get(test_url)
+        response = requests.get(test_url,headers=headers, timeout=5)
         print(f"Testing payload : {payload}")
 
         if any(error.lower() in response.text.lower() for error in error_signatures):

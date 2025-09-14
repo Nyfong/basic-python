@@ -83,5 +83,5 @@ def scan_xss(url):
 
 if __name__ == "__main__":
     # Example usage (replace with a test URL or a local test environment)
-    target_url = "https://www.envoytours.com/about_cambodia/about-cambodia-learn-khmer/"  # Replace with a test site or local environment
+    target_url = "https://www.techkhmer.net/?s=a"  # Replace with a test site or local environment
     scan_xss(target_url)
